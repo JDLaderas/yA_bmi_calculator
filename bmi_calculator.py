@@ -1,14 +1,16 @@
 # 1st input: enter height in meters e.g: 1.65
 
-height = input()
+height = input("What is your height in meter: ")
 # 2nd input: enter weight in kilograms e.g: 72
 
-weight = input()
+weight = input("What is your height in kg: ")
 
 
-height_str = int(height)
-weight_str = int(weight)
+height_float = float(height)
+weight_float = float(weight)
 
-calculation = weight_str / (height_str * height_str)
+calculation = weight_float / (height_float ** 2)
 
-print(calculation)
+calc_round = round(calculation)
+
+print("Your BMI is",calc_round)
