@@ -9,7 +9,7 @@ weight = input("What is your height in kg: ")
 height_float = float(height)
 weight_float = float(weight)
 
-calculation = weight_float / (height_float ** 2)
+calculation = weight_float / height_float ** 2
 
 calc_round = round(calculation)
 
